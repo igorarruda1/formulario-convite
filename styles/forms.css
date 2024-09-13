@@ -1,0 +1,19 @@
+@import url(/styles/fields/index.css);
+form{
+  padding-inline: 8.12rem;
+}
+fieldset{
+  border: none;
+}
+
+legend{
+  display: flex;
+  gap: 0.75rem;
+  font: var(--heading-sm);
+  color: var(--text-heading);
+  margin-bottom: 1.5rem;
+  & img{
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}

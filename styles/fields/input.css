@@ -1,0 +1,23 @@
+input{
+  appearance: none;
+  width: 100%; 
+  border-radius: .5rem;
+  font: var(--body-md);
+  background-color: var(--input-base);
+  padding: .81rem 1rem;
+  border: 2px solid transparent;
+  outline: 1px solid var(--input-stroke);
+}
+
+input:focus{
+  border: .125rem solid var(--brand-light);
+  outline-offset: .1px;
+  
+}
+
+label{
+  font: var(--body-sm);
+  color: var(--text-body);
+  display: block;
+  margin-bottom: .75rem;
+}
