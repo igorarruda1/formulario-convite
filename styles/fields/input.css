@@ -1,4 +1,4 @@
-input{
+input,textarea{
   appearance: none;
   width: 100%; 
   border-radius: .5rem;
@@ -7,6 +7,8 @@ input{
   padding: .81rem 1rem;
   border: 2px solid transparent;
   outline: 1px solid var(--input-stroke);
+  color: var(--text-heading);
+  max-height: 3rem;
 }
 
 input:focus{
@@ -14,10 +16,22 @@ input:focus{
   outline-offset: .1px;
   
 }
-
+input[type="datetime-local"]{
+  text-transform: uppercase;
+  color: var(--input-placeholder);
+ 
+}
+input::-webkit-calendar-picker-indicator {
+  opacity: 0
+}
+ 
 label{
   font: var(--body-sm);
   color: var(--text-body);
   display: block;
   margin-bottom: .75rem;
+}
+
+.flex{
+  gap: 1rem;
 }
