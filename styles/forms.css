@@ -1,6 +1,7 @@
 @import url(/styles/fields/index.css);
 form{
-  padding-inline: 8.12rem;
+  margin-left: 8.12rem;
+  width: 560px;
 }
 fieldset{
   border: none;
@@ -18,4 +19,8 @@ legend{
     width: 1.5rem;
     height: 1.5rem;
   }
+}
+
+fieldset + fieldset{
+  margin-top: 3rem;
 }

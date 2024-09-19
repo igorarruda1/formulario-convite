@@ -4,7 +4,6 @@
   border: 1px solid var(--input-stroke);
   border-radius: .5rem;
   max-height: 3rem;
-  
 }
 .radio-inner{
   display: flex;
@@ -42,4 +41,93 @@
 }
 .radio-inner:nth-child(2){
   margin-right: 0.25rem;
+}
+.radio-wrapper2{
+  grid-template-columns: repeat(auto-fit, minmax(2.5rem,2.5rem));
+  display: grid;
+  border-radius: .5rem;
+  justify-content: space-between;
+}
+.radio-inner2{
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  border-radius: 999px;
+  border: 8px solid var(--shape-button);
+
+  & #azul-claro{
+    background-color: var(--brand-light);
+    border-radius: 999px;
+  }
+  & #navy{
+    background-color: var(--navy);
+    border-radius: 999px;
+  }
+  & #purple{
+    background-color: var(--purple);
+    border-radius: 999px;
+  }
+  & #fuschia{
+    background-color: var(--fuschia);
+    border-radius: 999px;
+  }
+  & #pink{
+    background-color: var(--pink);
+    border-radius: 999px;
+  }
+  & #danger{
+    background-color: var(--danger);
+    border-radius: 999px;
+  }
+  & #orange{
+    background-color: var(--orange);
+    border-radius: 999px;
+  }
+  & #yellow{
+    background-color: var(--yellow);
+    border-radius: 999px;
+  }
+  & #lime{
+    background-color: var(--lime);
+    border-radius: 999px;
+  }
+  & #green{
+    background-color: var(--green);
+    border-radius: 999px;
+  }
+  & #cyan{
+    background-color: var(--cyan);
+    border-radius: 999px;
+  }
+ & input,
+ & input:focus,
+ & input:hover{
+  all: unset;
+  position: absolute;
+  inset: 0;
+ }
+ & input:hover{
+  outline: 8px solid var(--shape-hover);
+ }
+ 
+ &:has(:checked){
+  outline: 0.125rem solid var(--brand-light); 
+ 
+ }
+}
+
+.radio-wrapper3{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8.37rem,8.37rem));
+  gap: .5rem;
+}
+
+.radio-inner3{
+  background-color: var(--shape-button);
+  border-radius: .5rem;
+  text-align: center;
+  & img{
+      padding: .25rem;
+      border-radius: .5rem;
+  }
 }

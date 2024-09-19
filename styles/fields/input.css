@@ -1,17 +1,22 @@
+
 input,textarea{
   appearance: none;
   width: 100%; 
   border-radius: .5rem;
   font: var(--body-md);
   background-color: var(--input-base);
-  padding: .81rem 1rem;
+  padding: .75rem 1rem;
   border: 2px solid transparent;
   outline: 1px solid var(--input-stroke);
   color: var(--text-heading);
-  max-height: 3rem;
+  
+}
+select{
+  appearance: none;
 }
 
-input:focus{
+input:focus,
+textarea:focus{
   border: .125rem solid var(--brand-light);
   outline-offset: .1px;
   
@@ -34,4 +39,34 @@ label{
 
 .flex{
   gap: 1rem;
+}
+
+textarea{
+  &[required]{
+    border: .125rem solid var(--danger);
+    outline-offset: .1px;
+  }
+  &:valid{
+    border: none;
+    
+  }
+  &:focus-within{
+    border: .125rem solid var(--brand-light);
+    outline-offset: .1px;
+  }
+  
+  &[required] + .error{
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    font: var(--body-xs);
+    color: var(--danger);
+    margin-top: .25rem;
+    
+    }
+    
+    &:valid + .error{
+    display: none;
+    
+    }
 }
