@@ -1,6 +1,6 @@
 #app{
   display: grid;
-  grid-template-columns: 31.25% 64.06%;
+  grid-template-columns: 31.25% auto;
   height: 100vh;
   overflow: hidden;
   background-color: var(--shape-background);
@@ -9,7 +9,6 @@ main{
   overflow: auto;
   padding-top: 1.25rem;
   & .main-container{
-    
     max-width: 51.25rem;
     background-color: var(--shape-body);
     border-radius: 0.75rem;
