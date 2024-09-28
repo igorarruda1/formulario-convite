@@ -8,13 +8,12 @@
 main{
   overflow: auto;
   padding-top: 1.25rem;
-  
   & .main-container{
-    max-width: 100%;
+    
+    max-width: 51.25rem;
     background-color: var(--shape-body);
     border-radius: 0.75rem;
-    
-    
+    height: 123.81rem;
     & h1{
       padding-top: 5rem;
       padding-inline: 8.12rem;
@@ -48,6 +47,7 @@ aside{
 
 
 header{
+  
   display: grid;
   position: absolute;
   margin: 2rem;

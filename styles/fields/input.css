@@ -2,6 +2,7 @@
 input,textarea{
   appearance: none;
   width: 100%; 
+  
   border-radius: .5rem;
   font: var(--body-md);
   background-color: var(--input-base);
@@ -17,7 +18,8 @@ select{
 
 input:focus,
 textarea:focus{
-  border: .125rem solid var(--brand-light);
+  border: .125rem solid transparent;
+  outline: .125rem solid var(--brand-light);
   outline-offset: .1px;
   
 }
@@ -41,7 +43,7 @@ label{
   gap: 1rem;
 }
 
-textarea,input{
+textarea{
   &[required]{
     border: .125rem solid var(--danger);
     outline-offset: .1px;

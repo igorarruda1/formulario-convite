@@ -1,7 +1,8 @@
 @import url(/styles/fields/index.css);
 form{
   margin-left: 8.12rem;
-  width: 560px;
+  width: 35rem;
+  
 }
 fieldset{
   border: none;
