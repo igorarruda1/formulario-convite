@@ -45,7 +45,7 @@
   color: var(--danger);
   margin-top: .25rem;
   }
-  :valid + .error{
+  :valid + .error1{
     display: none;
     
     }
