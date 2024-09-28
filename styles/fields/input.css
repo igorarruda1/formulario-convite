@@ -41,10 +41,11 @@ label{
   gap: 1rem;
 }
 
-textarea{
+textarea,input{
   &[required]{
     border: .125rem solid var(--danger);
     outline-offset: .1px;
+    
   }
   &:valid{
     border: none;

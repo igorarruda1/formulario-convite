@@ -57,3 +57,43 @@
     }
 }
 
+.terms-wrapper{
+  display: flex;
+  gap: 0.75rem;
+  text-align: center;
+  color: var(--text-heading);
+
+  & input[type="checkbox"] {
+    all: unset;
+    inset: 0;
+    position: relative;
+    cursor: pointer;
+    border-radius: .25rem;
+    border: 1px solid var(--input-stroke);
+    width:  1.25rem;
+    height: 1.25rem;
+}
+  & input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid var(--brand-light);
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 6px;
+}
+& input[type=checkbox]:checked{
+  border: 1px solid var(--brand-light);
+}
+  & a{
+    color: var(--brand-light);
+  }
+ 
+}
+
+
