@@ -18,9 +18,8 @@ select{
 
 input:focus,
 textarea:focus{
-  border: .125rem solid transparent;
+
   outline: .125rem solid var(--brand-light);
-  outline-offset: .1px;
   
 }
 input[type="datetime-local"]{
@@ -43,34 +42,30 @@ label{
   gap: 1rem;
 }
 
-textarea{
+textarea,input{
   &[required]{
-    border: .125rem solid var(--danger);
-    outline-offset: .1px;
-    
-  }
-  &:valid{
-    border: none;
-    
-  }
-  &:focus-within{
-    border: .125rem solid var(--brand-light);
-    outline-offset: .1px;
-  }
-  
-  &[required] + .error{
-    display: flex;
-    align-items: center;
-    gap: .25rem;
-    font: var(--body-xs);
-    color: var(--danger);
-    margin-top: .25rem;
-    
+    outline-color: var(--danger);
+    &:valid{
+    outline-color:var(--input-stroke);
+    }
+    &:focus{
+    outline-color: var(--brand-light);
     }
     
-    &:valid + .error{
-    display: none;
-    
-    }
+    &[required] + .error{
+      display: flex;
+      align-items: center;
+      gap: .25rem;
+      font: var(--body-xs);
+      color: var(--danger);
+      margin-top: .5rem;
+      
+      }
+      &:valid + .error{
+      display: none;
+      
+      }
+  }
+ 
     
 }
