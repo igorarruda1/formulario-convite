@@ -302,19 +302,46 @@
                   </div>
                 </div>
               </div>
-
-              <div class="input-wrapper">
-                <label for="style">Estilo</label>
-                <div class="check">
-                  <div class="checkbox-wrapper">
-                    <input
-                      type="checkbox"
-                      name="style-check"
-                      id="checkboxInput"
-                    />
-                    <label class="toggleSwitch" for="checkboxInput"></label>
+              <div class="flex">
+                <div class="input-wrapper">
+                  <label for="style">Estilo</label>
+                  <div class="check">
+                    <div class="checkbox-wrapper">
+                      <input
+                        type="checkbox"
+                        name="style-check"
+                        id="checkboxInput"
+                      />
+                      <label class="toggleSwitch" for="checkboxInput"></label>
+                    </div>
+                    <label for="checkboxInput" class="label-check"></label>
                   </div>
-                  <label for="" class="label-check">Escuro</label>
+                </div>
+                <div class="droparea-wrapper">
+                  <label for="cover-photo">Foto de capa</label>
+                  <div class="dropzone">
+                    <label for="photo" class="file-button">
+                      <img
+                        src="assets/icons/upload.svg"
+                        alt=""
+                      />Selecionar</label
+                    >
+
+                    <input
+                      type="file"
+                      id="photo"
+                      name="photo"
+                      value=""
+                      required
+                    />
+                    <div class="error">
+                      <img
+                        src="assets/icons/circle-alert.svg"
+                        alt="Icone de Alerta vermelho"
+                      />
+                      <span>Error message</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </fieldset>

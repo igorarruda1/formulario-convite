@@ -31,7 +31,7 @@
       transform: translateX(130%);
       transition-duration: .4s;
     }
-
+   
    }
 }
 .check{
@@ -44,6 +44,16 @@
     }
      & .checkbox-wrapper{
       margin-block: 0.5rem;
+    }
+    & .label-check::before{
+      content: "Escuro";
+     }
+
+    &:has(:checked){
+
+       & .label-check::before{
+      content: "Claro";
+     }
     }
 }
 
